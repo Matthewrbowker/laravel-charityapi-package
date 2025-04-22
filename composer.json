@@ -1,0 +1,42 @@
+{
+  "name": "matthewrbowker/laravel-charityapi-package",
+  "description": "A Laravel package for interfacing with CharityAPI.org",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Matthew Bowker",
+      "email": "github@matthewbowker.net"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "laravelCharityAPI\\CharityAPI\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "7.9.3"
+  },
+  "require-dev": {
+    "pestphp/pest": "^3.8",
+    "orchestra/testbench": "^10.2",
+    "mockery/mockery": "^1.6"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "laravelCharityAPI\\CharityAPI\\CharityAPIServiceProvider"
+      ]
+    }
+  }
+}
